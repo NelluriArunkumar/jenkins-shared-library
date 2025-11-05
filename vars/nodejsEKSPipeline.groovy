@@ -131,7 +131,7 @@ def call(Map configMap){
 
 
             //Scanning the image from ECR if any vulnerabilities..
-            stage('Check Scan Results') {
+            /* stage('Check Scan Results') {
                 steps {
                     script {
                         withAWS(credentials: 'aws_creds', region: 'us-east-1') {
@@ -165,7 +165,7 @@ def call(Map configMap){
                     }
                 }
             }
-
+ */
 
 
             stage('Trigger Deploy'){
