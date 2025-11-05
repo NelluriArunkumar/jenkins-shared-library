@@ -6,6 +6,7 @@ def call(Map configMap){
 
         environment {
             COURSE = 'Jenkins'
+            greeting = configMap.get('greeting')
         }
 
         options {
